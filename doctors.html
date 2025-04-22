@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - MediPlus Hospital</title>
+    <link rel="stylesheet" href="dist/css/styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .doctors-hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 1rem;
+        }
+
+        .doctors-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 1rem;
+        }
+
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .doctor-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .doctor-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            object-fit: cover;
+        }
+
+        .doctor-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .doctor-card .specialty {
+            color: #3498db;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .doctor-card .bio {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .doctor-card .appointment-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .doctor-card .appointment-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .departments {
+            background-color: #f9f9f9;
+            padding: 5rem 1rem;
+        }
+
+        .departments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .department-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .department-card i {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1 style="color: red;"><span style="background-color: #5590e8; color: #fff; padding: 5px;">Medi</span>Plus</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html" class="active">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Doctors Hero Section -->
+    <section class="doctors-hero">
+        <div class="hero-content">
+            <h1>Our Expert Doctors</h1>
+            <p>Meet Our Team of Specialized Healthcare Professionals</p>
+        </div>
+    </section>
+
+    <!-- Doctors Grid Section -->
+    <section class="doctors-content">
+        <h2>Our Medical Specialists</h2>
+        <p>Our team of experienced doctors is dedicated to providing the highest quality of care to our patients.</p>
+        
+        <div class="doctors-grid">
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Dr. John Smith">
+                <h3>Dr. John Smith</h3>
+                <p class="specialty">Cardiologist</p>
+                <p class="bio">With over 15 years of experience in cardiology, Dr. Smith specializes in interventional cardiology and heart failure management.</p>
+                <a href="appointments.html" class="appointment-btn">Book Appointment</a>
+            </div>
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Dr. Sarah Johnson">
+                <h3>Dr. Sarah Johnson</h3>
+                <p class="specialty">Neurologist</p>
+                <p class="bio">Dr. Johnson is a board-certified neurologist with expertise in treating neurological disorders and conducting research in brain health.</p>
+                <a href="appointments.html" class="appointment-btn">Book Appointment</a>
+            </div>
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Dr. Michael Brown">
+                <h3>Dr. Michael Brown</h3>
+                <p class="specialty">Orthopedic Surgeon</p>
+                <p class="bio">Specializing in joint replacement and sports medicine, Dr. Brown has helped numerous patients regain mobility and return to active lifestyles.</p>
+                <a href="appointments.html" class="appointment-btn">Book Appointment</a>
+            </div>
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Dr. Emily Davis">
+                <h3>Dr. Emily Davis</h3>
+                <p class="specialty">Pediatrician</p>
+                <p class="bio">Dr. Davis is a compassionate pediatrician with 10 years of experience in child healthcare, specializing in preventive care and developmental pediatrics.</p>
+                <a href="appointments.html" class="appointment-btn">Book Appointment</a>
+            </div>
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1622902046580-2b47f47f5471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Dr. Robert Wilson">
+                <h3>Dr. Robert Wilson</h3>
+                <p class="specialty">Dermatologist</p>
+                <p class="bio">With expertise in cosmetic and medical dermatology, Dr. Wilson provides comprehensive skin care solutions and advanced treatment options.</p>
+                <a href="appointments.html" class="appointment-btn">Book Appointment</a>
+            </div>
+            <div class="doctor-card">
+                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Dr. Jennifer Lee">
+                <h3>Dr. Jennifer Lee</h3>
+                <p class="specialty">Ophthalmologist</p>
+                <p class="bio">Dr. Lee is a skilled ophthalmologist specializing in cataract surgery and refractive procedures, helping patients achieve optimal vision health.</p>
+                <a href="appointments.html" class="appointment-btn">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="departments">
+        <h2>Medical Departments</h2>
+        <div class="departments-grid">
+            <div class="department-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Cardiology</h3>
+                <p>Comprehensive heart care services</p>
+            </div>
+            <div class="department-card">
+                <i class="fas fa-brain"></i>
+                <h3>Neurology</h3>
+                <p>Advanced neurological care</p>
+            </div>
+            <div class="department-card">
+                <i class="fas fa-bone"></i>
+                <h3>Orthopedics</h3>
+                <p>Bone and joint specialists</p>
+            </div>
+            <div class="department-card">
+                <i class="fas fa-lungs"></i>
+                <h3>Pulmonology</h3>
+                <p>Respiratory care experts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center Drive</p>
+                <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                <p><i class="fas fa-envelope"></i> info@mediplus.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="appointments.html">Appointments</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MediPlus Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
